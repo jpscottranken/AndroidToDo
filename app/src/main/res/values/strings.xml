@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Android ToDo</string>
+    <string name="add_new_todo">Add New ToDo</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="enter_task_here">Enter Task Here</string>
+    <string name="task">Task</string>
+    <string name="description">Description</string>
+    <string name="date">Current Date</string>
+    <string name="update_task">Update Task</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="enter_description_here">Enter Description Here</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="add_a_todo">Add a ToDo</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="no_login">No Account? Click Here to Create</string>
+    <string name="click_to_go_back_to_login_page">Click to Go Back to Login Page</string>
 </resources>

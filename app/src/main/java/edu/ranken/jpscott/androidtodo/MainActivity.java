@@ -17,15 +17,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 public class MainActivity extends AppCompatActivity {
-    TextView tvGoToRegisterPage;
-    EditText etEmailLogin;
-    EditText etPasswordLogin;
-    Button   btnLogin;
-    private FirebaseAuth   auth;
-    private ProgressDialog loader;
-
+    private TextView            tvGoToRegisterPage;
+    private EditText            etEmailLogin;
+    private EditText            etPasswordLogin;
+    private Button              btnLogin;
+    private ProgressDialog      loader;
+    private FirebaseAuth        auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
         etPasswordLogin    = findViewById(R.id.etPasswordLogin);
         btnLogin           = findViewById(R.id.btnLogin);
 
-        auth   = FirebaseAuth.getInstance();
-        loader = new ProgressDialog(this);
-
         tvGoToRegisterPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        auth   = FirebaseAuth.getInstance();
+        loader = new ProgressDialog(this);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                                             SuccessActivity.class);
                                     startActivity(intent);
                                     finish();
-                                    loader.dismiss();
                                 }
                                 else
                                 {
@@ -91,8 +91,9 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.makeText(MainActivity.this,
                                             "Login Failed\n" +
                                                     error, Toast.LENGTH_LONG).show();
-                                    loader.dismiss();
                                 }
+
+                                loader.dismiss();
                             }
                         }
                 );

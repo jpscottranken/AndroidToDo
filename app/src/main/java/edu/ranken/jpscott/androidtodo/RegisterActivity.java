@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RegisterActivity.this,
-                                           SuccessActivity.class);
+                                           MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -90,7 +90,6 @@ public class RegisterActivity extends AppCompatActivity {
                                             MainActivity.class);
                                     startActivity(intent);
                                     finish();
-                                    loader.dismiss();
                                 }
                                 else
                                 {
@@ -98,8 +97,9 @@ public class RegisterActivity extends AppCompatActivity {
                                     Toast.makeText(RegisterActivity.this,
                                                   "Registration Failed\n" +
                                                   error, Toast.LENGTH_LONG).show();
-                                    loader.dismiss();
                                 }
+
+                                loader.dismiss();
                             }
                         }
                 );

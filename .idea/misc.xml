@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/layout/activity_success.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/layout/item_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/layout/task_row.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/jpscott/Desktop/AndroidToDo/app/src/main/res/layout/update_data.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
