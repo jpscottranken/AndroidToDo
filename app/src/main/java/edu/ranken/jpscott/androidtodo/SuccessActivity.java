@@ -81,7 +81,7 @@ public class SuccessActivity extends AppCompatActivity {
         final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = LayoutInflater.from(this);
 
-        View view = inflater.inflate(R.layout.task_row, null);
+        View view = inflater.inflate(R.layout.item_row, null);
         dialogBuilder.setView(view);
 
         final AlertDialog dialogAlert = dialogBuilder.create();

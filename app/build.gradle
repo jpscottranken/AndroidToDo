@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "tech.jameswharton.firebasehomework"
+        applicationId "edu.ranken.jpscott.androidtodo"
         minSdk 24
         targetSdk 32
         versionCode 1
